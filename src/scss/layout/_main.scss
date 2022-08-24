@@ -1,0 +1,63 @@
+@use '../util/' as u;
+.header {
+    background-image: url(/src/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+
+    &__logo {
+        transform: scale(0.5);
+        position: relative;
+        left: -60px;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem 0.9rem;
+        position: relative;
+        top: u.rem(-15);
+        left: u.rem(-10);
+        font-family: u.$body-cta-font;
+        font-weight: u.$fw-700;
+    }
+
+    &__flex {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__btnfree {
+        width: 70%;
+        align-self: center;
+    }
+    
+}
+
+.community {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    font-size: 10px;
+}
+
+.footie {
+    background-color: hsl(192, 100%, 9%);
+    padding: 2rem;
+    color: white;
+}
+
+.icon,
+.icon-text {
+    fill: white;
+}

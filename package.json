@@ -10,6 +10,7 @@
     "build": "parcel build ./src/index.html --public-url ./"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "shx": "^0.3.2"
   },
   "keywords": [],
