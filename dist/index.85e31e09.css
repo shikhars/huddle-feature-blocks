@@ -35,7 +35,7 @@ img {
 }
 
 .header {
-  background-image: url("bg-hero-mobile.c89469c1.svg");
+  background-image: url("bg-hero-mobile.dc029cfc.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,6 +48,7 @@ img {
 }
 
 .header__flex {
+  flex-basis: 3rem;
   margin-bottom: 2rem;
   display: flex;
 }
@@ -109,4 +110,4 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.e8265c92.css.map */
+/*# sourceMappingURL=index.85e31e09.css.map */
