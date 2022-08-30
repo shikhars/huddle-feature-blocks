@@ -3,6 +3,19 @@
   text-decoration: none;
 }
 
+.social {
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: .5rem;
+  display: flex;
+}
+
+.copyright {
+  margin-bottom: 2rem;
+  font-size: .8rem;
+}
+
 h1, h2 {
   text-align: center;
   margin: 0;
@@ -110,7 +123,7 @@ img {
   flex-direction: column;
   gap: 2rem;
   margin: 2rem auto;
-  padding: 1.5rem;
+  padding: 2.5rem;
   display: flex;
   box-shadow: 0 0 1rem .3rem #e6e6e6;
 }
@@ -118,6 +131,7 @@ img {
 .card__heading {
   text-align: center;
   font-family: Poppins, sans-serif;
+  font-size: larger;
   font-weight: 600;
 }
 
@@ -125,6 +139,7 @@ img {
   color: var(--neutral-gblue);
   text-align: center;
   font-family: Open Sans, sans-serif;
+  font-size: small;
   font-weight: 400;
 }
 
@@ -138,16 +153,16 @@ img {
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   position: relative;
-  top: 2rem;
-  box-shadow: 0 .1rem .5rem .1rem #e6e6e6;
+  top: 5rem;
+  box-shadow: .1rem 0 .5rem -.1rem #e6e6e6;
 }
 
 .community__heading {
   font-family: Poppins, sans-serif;
-  font-size: large;
+  font-size: medium;
   font-weight: 600;
 }
 
@@ -167,39 +182,74 @@ img {
 .footie {
   color: #fff;
   text-align: left;
+  z-index: -1;
   background-color: #00252e;
+  padding-top: 6rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+  position: absolute;
 }
 
 .footie__wrapper {
   flex-direction: column;
+  gap: 2rem;
   display: flex;
 }
 
 .footie__wrapper--logo {
-  transform: scale(.8);
+  position: relative;
+  left: -4.3rem;
+  transform: scale(.6);
 }
 
-.footie__wrapper--location {
+.footie__wrapper .location {
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
   display: flex;
 }
 
-.footie__wrapper--location p:before {
-  content: "";
-  background-color: red;
+.footie__wrapper .location .location-para {
+  text-align: left;
+  position: relative;
+  top: -.4375rem;
 }
 
-.footie__wrapper--phone, .footie__wrapper--email {
-  gap: .5rem;
+.footie__wrapper .phone {
+  gap: 1rem;
   display: flex;
+}
+
+.footie__wrapper .phone .phone-img {
+  transform: scale(.7);
+}
+
+.footie__wrapper .email {
+  gap: 1rem;
+  display: flex;
+}
+
+.footie__wrapper .email .email-img {
+  transform: scale(.7);
 }
 
 .footie__wrapper--links {
   flex-direction: column;
+  gap: 1.5rem;
   display: flex;
+}
+
+.footie__wrapper i {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .325rem;
+  font-size: 1rem;
 }
 
 .icon, .icon-text {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.169eaebc.css.map */
+/*# sourceMappingURL=index.dd916eed.css.map */
