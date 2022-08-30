@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem;
+    padding: 2.5rem;
     width: min(100% - 40px, 1000px);
     margin: 2rem auto;
     border: none;
@@ -83,6 +83,7 @@
         font-family: u.$heading-font;
         font-weight: u.$fw-600;
         text-align: center;
+        font-size: larger;
     }
 
     &__para {
@@ -90,6 +91,7 @@
         font-weight: u.$fw-400;
         color: var(--neutral-gblue);
         text-align: center;
+        font-size: small;
     }
 }
 
@@ -102,17 +104,17 @@
     background-color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     width: 90%;
     margin: 0 auto;
     position: relative;
-    top: 3rem;
+    top: 5rem;
     box-shadow: 0.1rem 0 0.5rem -0.1rem hsl(0, 0%, 90%);
 
     &__heading {
         font-family: u.$heading-font;
         font-weight: u.$fw-600;
-        font-size: large;
+        font-size: medium;
     }
 
     &__btnfree {
@@ -186,6 +188,15 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
+        }
+
+        i {
+            font-size: 1rem;
+            width: u.rem(29);
+            height: u.rem(29);
+            padding:0.325rem;
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 50%;
         }
     }
     

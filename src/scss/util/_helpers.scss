@@ -4,3 +4,16 @@
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
+
+.social {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
