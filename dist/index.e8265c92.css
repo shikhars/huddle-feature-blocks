@@ -196,6 +196,8 @@ img {
 
 .footie__wrapper .location .location-para {
   text-align: left;
+  position: relative;
+  top: -.4375rem;
 }
 
 .footie__wrapper .phone {
