@@ -101,11 +101,25 @@
         &__desk {
             display: flex;
             flex-direction: row-reverse;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem;
         }
 
-        &__desk1 {
+        &__deskone {
             display: flex;
             flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        &__desktwo {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 2rem;
+            align-items: center;
+            padding: 1rem;
         }
         
     }
@@ -115,6 +129,10 @@
         font-weight: u.$fw-600;
         text-align: center;
         font-size: larger;
+
+        @include u.breakpoint(medium) {
+            text-align: left;
+        }
     }
 
     &__para {
@@ -123,6 +141,10 @@
         color: var(--neutral-gblue);
         text-align: center;
         font-size: small;
+
+        @include u.breakpoint(medium) {
+            text-align: left;
+        }
     }
 }
 
@@ -142,10 +164,18 @@
     top: 5rem;
     box-shadow: 0 0 0.5rem -0.1rem hsl(0, 0%, 90%), 0 0 0.5rem -0.1rem hsl(0, 0%, 80%);
 
+    @include u.breakpoint(medium) {
+        width: 70%;
+    }
+
     &__heading {
         font-family: u.$heading-font;
         font-weight: u.$fw-600;
         font-size: medium;
+
+        @include u.breakpoint(medium) {
+            font-size: larger;
+        }
     }
 
     &__btnfree {
@@ -159,6 +189,10 @@
         margin-bottom: 1rem;
         font-family: u.$body-cta-font;
         font-weight: u.$fw-700;
+
+        @include u.breakpoint(medium) {
+            width: 50%;
+        }
     }
 }
 
