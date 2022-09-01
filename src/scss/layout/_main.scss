@@ -206,6 +206,10 @@
     padding-left: 0.7rem;
     z-index: -1;
 
+    @include u.breakpoint(medium) {
+        position: relative;
+    }
+
 
     &__wrapper {
         display: flex;

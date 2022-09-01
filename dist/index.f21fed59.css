@@ -271,6 +271,12 @@ img {
   position: absolute;
 }
 
+@media (min-width: 50em) {
+  .footie {
+    position: relative;
+  }
+}
+
 .footie__wrapper {
   flex-direction: column;
   gap: 2rem;
@@ -333,4 +339,4 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.5028eb99.css.map */
+/*# sourceMappingURL=index.f21fed59.css.map */
