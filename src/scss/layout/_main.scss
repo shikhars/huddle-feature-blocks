@@ -121,7 +121,7 @@
             align-items: center;
             padding: 1rem;
         }
-        
+
     }
 
     &__heading {
@@ -201,9 +201,7 @@
     background-color: hsl(192, 100%, 9%);
     color: white;
     text-align: left;
-    padding-top: 6rem;
-    padding-right: 0.7rem;
-    padding-left: 0.7rem;
+    padding-top: 10rem;
     z-index: -1;
 
     @include u.breakpoint(medium) {
@@ -212,26 +210,119 @@
 
 
     &__wrapper {
+
         display: flex;
         flex-direction: column;
         gap: 2rem;
 
-        &--logo {
-            transform: scale(0.6);
-            position: relative;
-            left: -4.3rem;
+        .footdesk {
+
+            @include u.breakpoint(medium) {
+                display: flex;
+                gap: 1rem;
+            }
+
+            &__inner {
+                width: 100%;
+                @include u.breakpoint(medium) {
+                    width: 30%;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            @include u.breakpoint(medium) {
+                margin-top: 7.4rem;
+                width: 20%;
+                font-size: small;
+            }
+
+            .contact {
+                margin-bottom: 4rem;
+            }
+
+            .faq {
+                margin-bottom: 2rem;
+
+                @include u.breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+        .so-copy {
+            width: 100%;
+
+            @include u.breakpoint(medium) {
+                margin-top: 7.4rem;
+                margin-bottom: 3rem;
+            }
+
+            .social {
+                display: flex;
+                gap: 0.5rem;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 2rem;
+
+                @include u.breakpoint(medium) {
+                    margin-bottom: 11rem;
+                    justify-content: flex-start;
+                }
+            }
+
+            @include u.breakpoint(medium) {
+                width: 30%;
+            }
+
+            .copyright {
+                font-size: 0.8rem;
+                margin-bottom: 2rem;
+
+                @include u.breakpoint(medium) {
+                    display: inline;
+                }
+            }
+        }
+
+        .footmobile {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+
+            @include u.breakpoint(medium) {
+                justify-content: center;
+            }
+
+            .icon,
+            .icon-text {
+                transform: scale(0.6);
+            }
         }
 
         .location {
             display: flex;
             align-items: flex-start;
             align-content: flex-start;
-            gap: 2rem;
+            gap: 1.5rem;
 
             .location-para {
                 text-align: left;
                 position: relative;
                 top: u.rem(-7);
+
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
             }
         }
 
@@ -242,33 +333,50 @@
             .phone-img {
                 transform: scale(0.7);
             }
+
+            .phone-para {
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
+            }
         }
 
         .email {
             display: flex;
             gap: 1rem;
+            margin-bottom: 2rem;
 
             .email-img {
                 transform: scale(0.7);
             }
-        }
 
-        &--links {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+            .email-para {
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
+            }
         }
 
         i {
             font-size: 1rem;
             width: u.rem(29);
             height: u.rem(29);
-            padding:0.325rem;
+            padding: 0.325rem;
             border: 1px solid hsl(0, 0%, 100%);
             border-radius: 50%;
+
+            @include u.breakpoint(medium) {
+                font-size: small;
+                width: u.rem(24);
+                height: u.rem(24);
+            }
+        }
+
+        i+i {
+            margin-left: 0.5rem;
         }
     }
-    
+
 }
 
 .icon,
