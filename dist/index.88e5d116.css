@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -54,24 +59,48 @@ img {
   display: flex;
 }
 
+@media (min-width: 50em) {
+  .header {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
 .header__flex {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   display: grid;
 }
 
+.header__flex .align-btn {
+  justify-content: flex-end;
+  display: inline-flex;
+}
+
 .header__flex--btn {
+  color: #000;
+  opacity: 1;
+  background-color: #fff;
   border: none;
-  border-radius: 1rem;
-  padding: .5rem .9rem;
+  border-radius: 1.5rem;
+  padding: 1rem 4rem;
   font-family: Open Sans, sans-serif;
   font-weight: 700;
+  box-shadow: 0 0 .5rem -.1rem #ccc;
 }
 
 @media (min-width: 50em) {
+  .header__flex--btn:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+
   .header__deskwrapper {
-    gap: 1rem;
+    align-items: center;
+    gap: 3rem;
     display: flex;
   }
 }
@@ -84,6 +113,12 @@ img {
   display: flex;
 }
 
+@media (min-width: 50em) {
+  .header__wrapper {
+    padding: 1.5rem;
+  }
+}
+
 .header__wrapper--h1 {
   margin-bottom: 1rem;
   font-size: 1.6rem;
@@ -92,6 +127,8 @@ img {
 @media (min-width: 50em) {
   .header__wrapper--h1 {
     text-align: left;
+    padding-right: 8rem;
+    font-size: 2rem;
   }
 }
 
@@ -102,6 +139,7 @@ img {
 @media (min-width: 50em) {
   .header__wrapper--p {
     text-align: left;
+    padding-right: 2rem;
   }
 }
 
@@ -109,6 +147,7 @@ img {
   width: 70%;
   background-color: var(--primary-pink);
   color: #fff;
+  opacity: 1;
   border: none;
   border-radius: 1rem;
   margin: 1rem auto;
@@ -119,8 +158,17 @@ img {
 
 @media (min-width: 50em) {
   .header__wrapper--btnfree {
+    width: 55%;
+    border-radius: 1.5rem;
     margin-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+}
+
+.header__wrapper--btnfree:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .card {
@@ -227,6 +275,7 @@ img {
   width: 70%;
   background-color: var(--primary-pink);
   color: #fff;
+  opacity: 1;
   border: none;
   border-radius: 1rem;
   align-self: center;
@@ -238,8 +287,16 @@ img {
 
 @media (min-width: 50em) {
   .community__btnfree {
-    width: 50%;
+    width: 35%;
+    border-radius: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+}
+
+.community__btnfree:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .footie {
@@ -437,6 +494,11 @@ img {
     height: 1.5rem;
     font-size: small;
   }
+
+  .footie__wrapper i :hover {
+    cursor: pointer;
+    border: 1px solid var(--primary-pink);
+  }
 }
 
 .footie__wrapper i + i {
@@ -447,4 +509,4 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.b38cf1c0.css.map */
+/*# sourceMappingURL=index.88e5d116.css.map */
