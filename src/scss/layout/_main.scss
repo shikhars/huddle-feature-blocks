@@ -14,31 +14,42 @@
     align-items: center;
     margin-bottom: 3rem;
 
+    @include u.breakpoint(medium) {
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
     &__flex {
-        display: flex;
-        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7rem;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
 
-
-        &--logo {
-            transform: scale(0.5);
-            justify-content: flex-start;
-            position: relative;
-            left: u.rem(-50);
+        .align-btn {
+            display: inline-flex;
+            justify-content: flex-end;
         }
 
         &--btn {
             border: none;
             border-radius: 1rem;
-            padding: 0.5rem 0.9rem;
+            padding: 1rem 4rem;
+            border-radius: 1.5rem;
             font-family: u.$body-cta-font;
             font-weight: u.$fw-700;
+            background-color: hsl(0, 0%, 100%);
+            color: black;
+            box-shadow: 0 0 0.5rem -0.1rem hsl(0, 0%, 80%);
         }
     }
 
     @include u.breakpoint(medium) {
         &__deskwrapper {
             display: flex;
-            gap: 1rem;
+            gap: 3rem;
+            align-items: center;
         }
     }
 
@@ -49,12 +60,20 @@
         gap: 1rem;
         text-align: center;
 
+        @include u.breakpoint(medium) {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 11rem;
+        }
+
         &--h1 {
             font-size: 1.6rem;
             margin-bottom: 1rem;
 
             @include u.breakpoint(medium) {
                 text-align: left;
+                font-size: 2rem;
             }
         }
 
@@ -79,6 +98,10 @@
 
             @include u.breakpoint(medium) {
                 margin-left: 0;
+                width: 55%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-radius: 1.5rem;
             }
         }
     }
@@ -191,7 +214,10 @@
         font-weight: u.$fw-700;
 
         @include u.breakpoint(medium) {
-            width: 50%;
+            width: 35%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 1.5rem;
         }
     }
 }
@@ -216,6 +242,7 @@
         gap: 2rem;
 
         .footdesk {
+            padding-left: 2rem;
 
             @include u.breakpoint(medium) {
                 display: flex;
