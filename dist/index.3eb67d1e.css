@@ -36,7 +36,7 @@ img {
 
 .header {
   background-color: var(--neutral-vpcyan);
-  background-image: url("bg-hero-mobile.c89469c1.svg");
+  background-image: url("bg-hero-mobile.dc029cfc.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,18 +71,24 @@ img {
 }
 
 .header__flex--btn {
+  width: 70%;
   color: #000;
   opacity: 1;
   background-color: #fff;
   border: none;
   border-radius: 1.5rem;
-  padding: 1rem 4rem;
+  padding: .5rem;
   font-family: Open Sans, sans-serif;
+  font-size: .8rem;
   font-weight: 700;
   box-shadow: 0 0 .5rem -.1rem #ccc;
 }
 
 @media (min-width: 50em) {
+  .header__flex--btn {
+    max-width: 40%;
+  }
+
   .header__flex--btn:hover {
     opacity: .5;
     cursor: pointer;
@@ -511,4 +517,4 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.e8265c92.css.map */
+/*# sourceMappingURL=index.3eb67d1e.css.map */
