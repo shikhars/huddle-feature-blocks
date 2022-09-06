@@ -36,7 +36,7 @@ img {
 
 .header {
   background-color: var(--neutral-vpcyan);
-  background-image: url("bg-hero-mobile.dc029cfc.svg");
+  background-image: url("bg-hero-mobile.c89469c1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -346,12 +346,14 @@ img {
     margin-top: 7.4rem;
     font-size: small;
   }
+}
 
-  .footie__wrapper .footdesk .links a {
-    color: #fff;
-    text-decoration: none;
-  }
+.footie__wrapper .footdesk .links a {
+  color: #fff;
+  text-decoration: none;
+}
 
+@media (min-width: 50em) {
   .footie__wrapper .footdesk .links a:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -414,15 +416,17 @@ img {
     font-size: small;
   }
 
-  .footie__wrapper .so-copy .social i i:hover {
+  .footie__wrapper .so-copy .social i:hover {
     cursor: pointer;
     border: 1px solid #ff52bf;
   }
+}
 
-  .footie__wrapper .so-copy .social i i + i {
-    margin-left: .5rem;
-  }
+.footie__wrapper .so-copy .social i + i {
+  margin-left: .5rem;
+}
 
+@media (min-width: 50em) {
   .footie__wrapper .so-copy {
     width: 30%;
   }
@@ -509,4 +513,4 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.1b85c52a.css.map */
+/*# sourceMappingURL=index.e8265c92.css.map */
