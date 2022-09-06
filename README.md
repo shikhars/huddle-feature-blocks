@@ -11,7 +11,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Screenshot
 
-![]()
+![](https://github.com/shikhars/huddle-feature-blocks/blob/nondefault/src/images/Screenshot.png)
 
 
 ### Links
