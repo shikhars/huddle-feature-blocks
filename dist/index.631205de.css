@@ -11,16 +11,6 @@ p {
   margin: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -343,7 +333,7 @@ img {
   }
 }
 
-.footie__wrapper .links {
+.footie__wrapper .footdesk .links {
   width: 100%;
   flex-direction: column;
   gap: 1.5rem;
@@ -351,25 +341,35 @@ img {
 }
 
 @media (min-width: 50em) {
-  .footie__wrapper .links {
+  .footie__wrapper .footdesk .links {
     width: 20%;
     margin-top: 7.4rem;
     font-size: small;
   }
 }
 
-.footie__wrapper .links .contact {
+.footie__wrapper .footdesk .links .contact {
   margin-bottom: 4rem;
 }
 
-.footie__wrapper .links .faq {
+.footie__wrapper .footdesk .links .faq {
   margin-bottom: 2rem;
 }
 
 @media (min-width: 50em) {
-  .footie__wrapper .links .faq {
+  .footie__wrapper .footdesk .links .faq {
     margin-bottom: 0;
   }
+}
+
+.footie__wrapper .footdesk .links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footie__wrapper .footdesk .links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .footie__wrapper .so-copy {
@@ -396,7 +396,35 @@ img {
     justify-content: flex-start;
     margin-bottom: 11rem;
   }
+}
 
+.footie__wrapper .so-copy .social i {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .325rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 50em) {
+  .footie__wrapper .so-copy .social i {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: small;
+  }
+}
+
+.footie__wrapper .so-copy .social i:hover {
+  cursor: pointer;
+  border: 1px solid #ff52bf;
+}
+
+.footie__wrapper .so-copy .social i + i {
+  margin-left: .5rem;
+}
+
+@media (min-width: 50em) {
   .footie__wrapper .so-copy {
     width: 30%;
   }
@@ -479,34 +507,8 @@ img {
   }
 }
 
-.footie__wrapper i {
-  width: 1.8125rem;
-  height: 1.8125rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: .325rem;
-  font-size: 1rem;
-}
-
-@media (min-width: 50em) {
-  .footie__wrapper i {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: small;
-  }
-
-  .footie__wrapper i :hover {
-    cursor: pointer;
-    border: 1px solid var(--primary-pink);
-  }
-}
-
-.footie__wrapper i + i {
-  margin-left: .5rem;
-}
-
 .icon, .icon-text {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.88e5d116.css.map */
+/*# sourceMappingURL=index.631205de.css.map */

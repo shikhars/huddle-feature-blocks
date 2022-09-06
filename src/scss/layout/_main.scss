@@ -277,29 +277,39 @@
                     padding-right: 2rem;
                 }
             }
-        }
 
-        .links {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-
-            @include u.breakpoint(medium) {
-                margin-top: 7.4rem;
-                width: 20%;
-                font-size: small;
-            }
-
-            .contact {
-                margin-bottom: 4rem;
-            }
-
-            .faq {
-                margin-bottom: 2rem;
-
+            .links {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+    
                 @include u.breakpoint(medium) {
-                    margin-bottom: 0;
+                    margin-top: 7.4rem;
+                    width: 20%;
+                    font-size: small;
+                }
+    
+                .contact {
+                    margin-bottom: 4rem;
+                }
+    
+                .faq {
+                    margin-bottom: 2rem;
+    
+                    @include u.breakpoint(medium) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: hsl(0, 0%, 100%);
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
                 }
             }
         }
@@ -323,6 +333,31 @@
                     margin-bottom: 11rem;
                     justify-content: flex-start;
                 }
+
+                i {
+                    font-size: 1rem;
+                    width: u.rem(29);
+                    height: u.rem(29);
+                    padding: 0.325rem;
+                    border: 1px solid hsl(0, 0%, 100%);
+                    border-radius: 50%;
+        
+                    @include u.breakpoint(medium) {
+                        font-size: small;
+                        width: u.rem(24);
+                        height: u.rem(24);
+                    }
+                }
+
+                i:hover {
+                    border: 1px solid hsl(322, 100%, 66%);
+                    cursor: pointer;
+                }
+
+                i+i {
+                    margin-left: 0.5rem;
+                }
+
             }
 
             @include u.breakpoint(medium) {
@@ -401,30 +436,6 @@
                     font-size: small;
                 }
             }
-        }
-
-        i {
-            font-size: 1rem;
-            width: u.rem(29);
-            height: u.rem(29);
-            padding: 0.325rem;
-            border: 1px solid hsl(0, 0%, 100%);
-            border-radius: 50%;
-
-            @include u.breakpoint(medium) {
-                font-size: small;
-                width: u.rem(24);
-                height: u.rem(24);
-
-                :hover {
-                    cursor: pointer;
-                    border: 1px solid var(--primary-pink);
-                }
-            }
-        }
-
-        i+i {
-            margin-left: 0.5rem;
         }
     }
 
