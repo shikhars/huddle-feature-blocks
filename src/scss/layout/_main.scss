@@ -288,6 +288,16 @@
                     margin-top: 7.4rem;
                     width: 20%;
                     font-size: small;
+
+                    a {
+                        text-decoration: none;
+                        color: hsl(0, 0%, 100%);
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
     
                 .contact {
@@ -300,16 +310,6 @@
                     @include u.breakpoint(medium) {
                         margin-bottom: 0;
                     }
-                }
-
-                a {
-                    text-decoration: none;
-                    color: hsl(0, 0%, 100%);
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
                 }
             }
         }
@@ -346,16 +346,16 @@
                         font-size: small;
                         width: u.rem(24);
                         height: u.rem(24);
+
+                        i:hover {
+                            border: 1px solid hsl(322, 100%, 66%);
+                            cursor: pointer;
+                        }
+        
+                        i+i {
+                            margin-left: 0.5rem;
+                        }
                     }
-                }
-
-                i:hover {
-                    border: 1px solid hsl(322, 100%, 66%);
-                    cursor: pointer;
-                }
-
-                i+i {
-                    margin-left: 0.5rem;
                 }
 
             }
