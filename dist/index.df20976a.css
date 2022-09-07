@@ -464,6 +464,7 @@ img {
 }
 
 .footie__wrapper .phone .phone-para {
+  white-space: nowrap;
   position: relative;
   top: -.25rem;
 }
@@ -524,4 +525,4 @@ i:hover {
   border: 1px solid #ff52bf;
 }
 
-/*# sourceMappingURL=index.916748e3.css.map */
+/*# sourceMappingURL=index.df20976a.css.map */

@@ -399,6 +399,7 @@
             .phone-para {
                 position: relative;
                 top: u.rem(-4);
+                white-space: nowrap;
 
                 @include u.breakpoint(medium) {
                     font-size: small;
