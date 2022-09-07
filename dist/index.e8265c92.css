@@ -453,6 +453,8 @@ img {
 }
 
 .footie__wrapper .phone {
+  align-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
   display: flex;
 }
@@ -468,6 +470,8 @@ img {
 }
 
 .footie__wrapper .email {
+  align-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
   display: flex;

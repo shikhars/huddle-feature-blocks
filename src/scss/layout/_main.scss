@@ -389,6 +389,8 @@
         .phone {
             display: flex;
             gap: 1rem;
+            align-items: flex-start;
+            align-content: flex-start;
 
             .phone-img {
                 transform: scale(0.7);
@@ -405,6 +407,8 @@
             display: flex;
             gap: 1rem;
             margin-bottom: 2rem;
+            align-items: flex-start;
+            align-content: flex-start;
 
             .email-img {
                 transform: scale(0.7);
