@@ -440,6 +440,10 @@ img {
   display: flex;
 }
 
+.footie__wrapper .location .location-img {
+  transform: scale(.9);
+}
+
 .footie__wrapper .location .location-para {
   text-align: left;
   position: relative;
@@ -484,12 +488,12 @@ img {
 }
 
 .footie__wrapper .email .email-img {
-  transform: scale(.8);
+  transform: scale(.9);
 }
 
 .footie__wrapper .email .email-para {
   position: relative;
-  top: -.375rem;
+  top: -.25rem;
 }
 
 @media (min-width: 50em) {

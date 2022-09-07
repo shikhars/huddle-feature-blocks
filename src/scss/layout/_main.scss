@@ -375,6 +375,10 @@
             align-content: flex-start;
             gap: 1.5rem;
 
+            .location-img {
+                transform: scale(0.9)
+            }
+
             .location-para {
                 text-align: left;
                 position: relative;
@@ -415,12 +419,12 @@
             align-content: flex-start;
 
             .email-img {
-                transform: scale(0.8);
+                transform: scale(0.9);
             }
 
             .email-para {
                 position: relative;
-                top: u.rem(-6);
+                top: u.rem(-4);
 
                 @include u.breakpoint(medium) {
                     font-size: small;
