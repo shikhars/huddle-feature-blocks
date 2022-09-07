@@ -460,7 +460,12 @@ img {
 }
 
 .footie__wrapper .phone .phone-img {
-  transform: scale(.7);
+  transform: scale(.8);
+}
+
+.footie__wrapper .phone .phone-para {
+  position: relative;
+  top: -.25rem;
 }
 
 @media (min-width: 50em) {
@@ -478,7 +483,12 @@ img {
 }
 
 .footie__wrapper .email .email-img {
-  transform: scale(.7);
+  transform: scale(.8);
+}
+
+.footie__wrapper .email .email-para {
+  position: relative;
+  top: -.375rem;
 }
 
 @media (min-width: 50em) {
@@ -514,4 +524,4 @@ i:hover {
   border: 1px solid #ff52bf;
 }
 
-/*# sourceMappingURL=index.351dd699.css.map */
+/*# sourceMappingURL=index.916748e3.css.map */

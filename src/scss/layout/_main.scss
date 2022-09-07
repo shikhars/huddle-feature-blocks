@@ -393,10 +393,13 @@
             align-content: flex-start;
 
             .phone-img {
-                transform: scale(0.7);
+                transform: scale(0.8);
             }
 
             .phone-para {
+                position: relative;
+                top: u.rem(-4);
+
                 @include u.breakpoint(medium) {
                     font-size: small;
                 }
@@ -411,10 +414,13 @@
             align-content: flex-start;
 
             .email-img {
-                transform: scale(0.7);
+                transform: scale(0.8);
             }
 
             .email-para {
+                position: relative;
+                top: u.rem(-6);
+
                 @include u.breakpoint(medium) {
                     font-size: small;
                 }
