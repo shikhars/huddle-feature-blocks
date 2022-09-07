@@ -298,16 +298,8 @@ img {
 .footie {
   color: #fff;
   text-align: left;
-  z-index: -1;
   background-color: #00252e;
   padding-top: 10rem;
-  position: absolute;
-}
-
-@media (min-width: 50em) {
-  .footie {
-    position: relative;
-  }
 }
 
 .footie__wrapper {
@@ -404,28 +396,6 @@ img {
   }
 }
 
-.footie__wrapper .so-copy .social i {
-  width: 1.8125rem;
-  height: 1.8125rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: .325rem;
-  font-size: 1rem;
-}
-
-@media (min-width: 50em) {
-  .footie__wrapper .so-copy .social i {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: small;
-  }
-
-  .footie__wrapper .so-copy .social i i:hover {
-    cursor: pointer;
-    border: 1px solid #ff52bf;
-  }
-}
-
 .footie__wrapper .so-copy .social i + i {
   margin-left: .5rem;
 }
@@ -517,4 +487,27 @@ img {
   fill: #fff;
 }
 
-/*# sourceMappingURL=index.3eb67d1e.css.map */
+i {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .325rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 50em) {
+  i {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: small;
+  }
+}
+
+i:hover {
+  color: #ff52bf;
+  cursor: pointer;
+  border: 1px solid #ff52bf;
+}
+
+/*# sourceMappingURL=index.0cc131d0.css.map */

@@ -248,17 +248,10 @@
 }
 
 .footie {
-    position: absolute;
     background-color: hsl(192, 100%, 9%);
     color: white;
     text-align: left;
     padding-top: 10rem;
-    z-index: -1;
-
-    @include u.breakpoint(medium) {
-        position: relative;
-    }
-
 
     &__wrapper {
 
@@ -340,115 +333,116 @@
                     justify-content: flex-start;
                 }
 
-                i {
-                    font-size: 1rem;
-                    width: u.rem(29);
-                    height: u.rem(29);
-                    padding: 0.325rem;
-                    border: 1px solid hsl(0, 0%, 100%);
-                    border-radius: 50%;
-
-                    @include u.breakpoint(medium) {
-                        font-size: small;
-                        width: u.rem(24);
-                        height: u.rem(24);
-
-                        i:hover {
-                            border: 1px solid hsl(322, 100%, 66%);
-                            cursor: pointer;
-                    }
+                i+i {
+                    margin-left: 0.5rem;
                 }
 
             }
 
-            i+i {
-                margin-left: 0.5rem;
+            @include u.breakpoint(medium) {
+                width: 30%;
             }
 
+            .copyright {
+                font-size: 0.8rem;
+                margin-bottom: 2rem;
+
+                @include u.breakpoint(medium) {
+                    display: inline;
+                }
+            }
         }
 
-        @include u.breakpoint(medium) {
-            width: 30%;
+        .footmobile {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+
+            @include u.breakpoint(medium) {
+                justify-content: center;
+            }
+
+            .icon,
+            .icon-text {
+                transform: scale(0.6);
+            }
         }
 
-        .copyright {
-            font-size: 0.8rem;
+        .location {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 1.5rem;
+
+            .location-para {
+                text-align: left;
+                position: relative;
+                top: u.rem(-7);
+
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
+            }
+        }
+
+        .phone {
+            display: flex;
+            gap: 1rem;
+
+            .phone-img {
+                transform: scale(0.7);
+            }
+
+            .phone-para {
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
+            }
+        }
+
+        .email {
+            display: flex;
+            gap: 1rem;
             margin-bottom: 2rem;
 
-            @include u.breakpoint(medium) {
-                display: inline;
+            .email-img {
+                transform: scale(0.7);
+            }
+
+            .email-para {
+                @include u.breakpoint(medium) {
+                    font-size: small;
+                }
             }
         }
     }
-
-    .footmobile {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-
-        @include u.breakpoint(medium) {
-            justify-content: center;
-        }
-
-        .icon,
-        .icon-text {
-            transform: scale(0.6);
-        }
-    }
-
-    .location {
-        display: flex;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 1.5rem;
-
-        .location-para {
-            text-align: left;
-            position: relative;
-            top: u.rem(-7);
-
-            @include u.breakpoint(medium) {
-                font-size: small;
-            }
-        }
-    }
-
-    .phone {
-        display: flex;
-        gap: 1rem;
-
-        .phone-img {
-            transform: scale(0.7);
-        }
-
-        .phone-para {
-            @include u.breakpoint(medium) {
-                font-size: small;
-            }
-        }
-    }
-
-    .email {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 2rem;
-
-        .email-img {
-            transform: scale(0.7);
-        }
-
-        .email-para {
-            @include u.breakpoint(medium) {
-                font-size: small;
-            }
-        }
-    }
-}
 
 }
 
 .icon,
 .icon-text {
     fill: white;
+}
+
+i {
+    font-size: 1rem;
+    width: u.rem(29);
+    height: u.rem(29);
+    padding: 0.325rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+
+    @include u.breakpoint(medium) {
+        font-size: small;
+        width: u.rem(24);
+        height: u.rem(24);
+    }
+
+}
+
+i:hover {
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
 }
